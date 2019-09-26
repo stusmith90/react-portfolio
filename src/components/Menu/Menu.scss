@@ -1,0 +1,39 @@
+.Menu {
+  text-align: center;
+  padding: 40px 50px 10px;
+
+  @media (min-width: 1300px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: inherit;
+    padding: 90px 50px 10px 70px;
+  }
+}
+
+.Menu__title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+
+  @media (min-width: 1300px) {
+    font-size: 2rem;
+    line-height: inherit;
+  }
+}
+
+.Menu__list {
+  margin-top: 40px;
+
+  @media (min-width: 1300px) {
+    margin-top: 11px;
+    float: right;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 1rem;
+    border: 1px solid #003c50;
+    margin: 7px;
+    color: #003c50;
+  }
+}
