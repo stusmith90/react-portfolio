@@ -1,0 +1,15 @@
+.TimelineCard__image {
+  width: 20%;
+  height: auto;
+  margin-top: 5px;
+  display: inline-block;
+
+  @media (min-width: 600px) { 
+    margin-left: 45px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
