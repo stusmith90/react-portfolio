@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  font: 10px 'Roboto', sans-serif;
+  font: 10px 'Inconsolata', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   margin: 0;
 }
 

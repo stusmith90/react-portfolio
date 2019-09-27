@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
 import './TimelineCard.scss';
+import TimelineCardImage from "../../components/TimelineCardImage/TimelineCardImage";
+import TimelineCardTechlist from "../../components/TimelineCardTechlist/TimelineCardTechlist";
 
 class TimelineCard extends Component {
 
@@ -42,7 +44,6 @@ class TimelineCard extends Component {
     let timelineCard = (
       <article className="TimelineCard__stack" onClick={this.onCardClicked} key={this.props.cardId}>
         <div className={'TimelineCard TimelineCard__top-card'}>
-          {/* <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} /> */}
           <div className='TimelineCard__details'>
             <div className="TimelineCard__title">{this.props.title}</div>
             <div className="TimelineCard__dates">{this.props.startDate} - {this.props.endDate}</div>
@@ -50,7 +51,9 @@ class TimelineCard extends Component {
              {this.props.location}
             </ul>
           </div>
-          
+          <div className="TimelineCard__techlist">
+            { this.state.cardClicked ? <TimelineCardTechlist techlist={this.props.techlist} /> : '' }
+          </div>
         </div>
         <div className="TimelineCard TimelineCard__bottom-card">
           <p className="TimelineCard__description">{this.props.description}</p>
@@ -62,7 +65,6 @@ class TimelineCard extends Component {
     // which joins the timeline cards from top to bottom)
     let cardJoiner = (
       <div className={'TimelineCard__joiner'} key={this.props.cardId + '_joiner'}>
-        <div className="TimelineCard__joiner-date">{this.props.endDate}</div>
       </div>
     );
 
