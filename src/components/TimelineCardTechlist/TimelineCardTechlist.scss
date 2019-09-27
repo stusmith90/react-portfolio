@@ -1,0 +1,23 @@
+.Techlist {
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.Techlist .Techlist__item {
+  float: left;
+  padding: 6px;
+
+  @media (min-width: 1200px) {
+    padding: 10px;
+  }
+
+  img {
+    width: auto;
+    height: 35px;
+
+    @media (min-width: 1200px) {
+      height: 75px;
+    }
+  }
+}

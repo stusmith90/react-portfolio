@@ -1,6 +1,6 @@
 .Intro {
   padding: 40px 5vw;
-  background-color:teal;
+  background-color:steelblue;
 
   @media (min-width: 600px) {
     padding: 40px 50px 40px 70px;
@@ -10,7 +10,7 @@
 .Intro__list {
   margin: 30px 20px;
   padding: 0;
-  list-style: none;
+  list-style-type: square;
 }
 
 .Intro__heading {
